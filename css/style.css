@@ -1,3 +1,5 @@
+
+
 .cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .cycle-slideshow { width: 100%; min-width: 200px; margin: auto; padding: 0; }
 
@@ -23,20 +25,33 @@
     height: 100%;
 }
 
-.composite-example > div { background: white }
-.composite-example > div > img { 
+.composite > div { background: white }
+.composite > div > img { 
 	display: block; 
 	height: 100%;
+	float: right;
 }
-.composite-example > div .cycle-overlay { 
-    color: white; 
-    background: black; 
-    opacity: .6; 
-    filter:alpha(opacity=60);
+.composite > div .text-container { 
     position: absolute; 
-    bottom: 0; 
-    width: 100%; 
+    left: 0; 
+    width: 50%; 
     padding: 15px;
 }
 
+/* template attributes */
+.composite > div .title {
+	font-size: 48px;
+	margin-bottom: 30px;
+}
+.composite > div .teaser-text {
+	line-height: 1.5;
+	font-size: 24px;
+    margin-bottom: 30px;
+}
+.composite > div .students, .composite > div .year {
+    font-size: 22px;
+    line-height: 1.2;
+}
+
 .cycle-slide p { margin: 0; padding: 10px }
+
