@@ -32,6 +32,7 @@ foreach($profiles_xml->children() as $node) {
 }
 
 foreach($projects_xml->children() as $node) { 
+
     $format = 
     	'<div class="slide-container">
             <img src="%s">
