@@ -8,12 +8,12 @@ $PROJECTS_URL = "http://www.ischool.berkeley.edu/feeds/iplasmatron-mims-projects
 // see api here: http://jquery.malsup.com/cycle2/api/
 $CYCLE_FX = "scrollHorz";
 $CYCLE_SPEED = 800;
-$CYCLE_TIMEOUT = 5000;
+$CYCLE_TIMEOUT = 10000;
 
 // SLIDESHOW PARAMETERS
-$NUM_SLIDES = 1; // -1 for all slides
+$NUM_SLIDES = -1; // -1 for all slides
 $ONLY_PROFILES = False;
-$ONLY_PROJECTS = True;
+$ONLY_PROJECTS = False;
 
 // Load feed into variables
 $profiles_xml = simplexml_load_file($PROFILES_URL) or die("Error: Cannot create profiles object");
