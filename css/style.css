@@ -1,4 +1,17 @@
 
+/* I School screen dimensions: 3840x2160.  Keep body at those proportions. */
+body {
+    background-color: #000000;
+}
+#container {
+    width: 1200px;
+    height: 647px;
+    padding: 15px;
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 .cycle-slideshow { 
     width: 100%;
@@ -29,31 +42,60 @@
     display: none;
 }
 .composite > div > img { 
-	display: block; 
-	height: 550px;
-	float: right;
+    display: block; 
+    height: 100%;
+    float: right;
 }
 .composite > div .text-container { 
     position: absolute; 
     left: 0; 
     width: 50%; 
-    padding: 15px;
+    padding-top: 15px;
+    padding-left: 30px;
 }
 
 /* template attributes */
 .composite > div .title {
-	font-size: 48px;
-	margin-bottom: 30px;
+    font-size: 48px;
+    margin-bottom: 30px;
 }
 .composite > div .teaser-text {
-	line-height: 1.5;
-	font-size: 24px;
+    line-height: 1.5;
+    font-size: 24px;
     margin-bottom: 30px;
 }
 .composite > div .students, .composite > div .year {
-    font-size: 22px;
-    line-height: 1.2;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.composite > div .year {
+    float: left;
 }
 
 .cycle-slide p { margin: 0; padding: 10px }
+
+.students div {
+    display: inline-block;
+}
+.composite > div .students .field-item, .composite > div .year {
+    margin-right: 18px;
+}
+.composite > div .teaser-text p {
+    padding: 0;
+}
+
+/* FONTS */
+/* families: Freight Big Pro, Freight Display Pro, Freight Micro Pro, Freight Text Pro, Freight Sans Pro */
+/* weights: Light (100), Book (400), Medium (500), Semibold (600), Bold (700), Black (900) */
+/* styles: Normal, Italic */
+
+.title {
+    font-family: "freight-sans-pro";
+    font-weight: 700;
+}
+.composite > div .teaser-text, .students, .year {
+    font-family: "freight-text-pro";
+    font-weight: 400;
+}
+
 
