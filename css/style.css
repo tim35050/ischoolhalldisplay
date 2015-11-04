@@ -1,87 +1,112 @@
 
 /* I School screen dimensions: 3840x2160.  Keep body at those proportions. */
+/* Debugging screen dimensions: 1200x647 */
 body {
-    background-color: #000000;
+    background-color: #000;
+    margin: 0px;
 }
+
 #container {
-    width: 1200px;
-    height: 647px;
-    background-color: #FFFFFF;
+    width: 3840px;
+    height: 2155px;
+    /*background-color: #000;*/
     margin-left: auto;
     margin-right: auto;
 }
 
 .cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-.cycle-slideshow { 
+.cycle-slideshow {
     width: 100%;
-    height: 100%; 
-    min-width: 200px; 
-    margin: auto; 
+    height: 100%;
+    min-width: 200px;
+    margin: auto;
 }
 
 /* anchors */
-.cycle-slideshow > a { 
+.cycle-slideshow > a {
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; background-color: #222; display: block;
 }
 
 /* divs */
-.cycle-slideshow > div { 
-    position: absolute; 
-    top: 0; 
+.cycle-slideshow > div {
+    position: absolute;
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100%;
 }
 
+.project {
+    background-color: #000;
+    color: #FFF;
+}
+
+.profile {
+    background-color: #000;
+    color: #FFF;
+}
+
 .slide-container {
-    color: #000000;
-    background-color: #FFFFFF;
-    padding: 0px 45px;
+    padding: 0px 150px; /* 45 */
 }
 
 .composite > div {
     display: none;
 }
-.composite > div > img { 
-    display: block; 
+.composite > div > img {
+    display: block;
     height: 100%;
     float: right;
 }
-.composite > div .text-container { 
-    position: absolute; 
-    left: 0; 
-    width: 40%; 
-    padding-top: 60px;
-    margin-left: 45px;
+
+.composite > div .image-container {
+    display: block;
+    height: 100%;
+    float: right;
+    width: 49%; /* 42 if we want borders */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto 100%;
+}
+
+.composite > div .text-container {
+    position: absolute;
+    left: 0;
+    width: 40%;
+    padding-top: 200px; /* 60 */
+    margin-left: 150px; /* 45 */
 }
 
 /* template attributes */
 .composite > div .title {
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: 160px; /* 48 */
+    margin-bottom: 100px; /* 30 */
 }
 .composite > div .teaser-text {
     line-height: 1.5;
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 80px; /* 24 */
+    margin-bottom: 100px; /* 30 */
 }
 .composite > div .students, .composite > div .year {
-    font-size: 16px;
+    font-size: 53px; /* 16 */
     line-height: 1.6;
 }
 .composite > div .year {
     float: left;
 }
 
-.cycle-slide p { margin: 0; padding: 10px }
+.cycle-slide p {
+    margin: 0;
+    padding: 33px; /* 10 */
+}
 
 .students div {
     display: inline-block;
 }
 .composite > div .students .field-item, .composite > div .year {
-    margin-right: 12px;
-    color: #000 !important;
+    margin-right: 40px; /* 12 */
+    /*color: #000 !important;*/
 }
 .composite > div .teaser-text p {
     padding: 0;
@@ -100,5 +125,3 @@ body {
     font-family: "freight-text-pro";
     font-weight: 400;
 }
-
-
